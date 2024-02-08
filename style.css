@@ -1,0 +1,19 @@
+.text-center{
+    text-align: center;
+}
+
+.m-top{
+    margin-top: 26px;   
+}
+
+#btn-sec{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+}
+
+#input-principal{
+    padding: 2px 8px;
+}
