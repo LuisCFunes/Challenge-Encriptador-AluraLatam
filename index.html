@@ -14,13 +14,16 @@
     </main>
 
     <section id="btn-sec" class="text-center m-top">
-        <button id="btn-enc">Clic para encriptar el texto</button>
-        <button id="btn-des">Clic para desencriptar el texto</button>
+        <button id="btn-enc" onclick="hideOrshowCopyBtn()">Clic para encriptar el texto</button>
+        <button id="btn-des" onclick="hideOrshowCopyBtn()">Clic para desencriptar el texto</button>
     </section>
 
     <section id="text-result" class="text-center">
         <h3>Texto encriptado</h3>
-        <p id="result">gaitober</p>
+        <div class="flex">
+            <p id="result"></p>
+            <button id="btn-copy" onclick="copyContent()">Copy!</button>
+        </div>
     </section>
 
     <script src="index.js"></script>

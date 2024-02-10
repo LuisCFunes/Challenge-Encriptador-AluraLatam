@@ -1,3 +1,7 @@
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
 .text-center{
     text-align: center;
 }
@@ -16,4 +20,17 @@
 
 #input-principal{
     padding: 2px 8px;
+}
+
+#btn-copy{
+    display: none;
+    width: 80px;
+    height: 26px;
+    margin: auto 0;
+}
+
+#text-result div{
+    width: 40%;
+    margin: auto;
+    padding: 4px 12px;
 }
