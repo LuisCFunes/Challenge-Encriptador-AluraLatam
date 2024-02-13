@@ -1,36 +1,97 @@
-.flex{
-    display: flex;
-    justify-content: space-around;
-}
-.text-center{
-    text-align: center;
-}
-
-.m-top{
-    margin-top: 26px;   
-}
-
-#btn-sec{
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    width: 480px;
+:root {
+  --dark-blue-100: #609ed4;
+  --dark-blue-200: #356ea9;
+  --dark-blue-300: #0a3871;
+  --dark-blue-400: #072b61;
+  --dark-blue-500: #052051;
+  --gray-100: #ced4da;
+  --gray-200: #adb5bd;
+  --gray-300: #868e96;
+  --gray-400: #495057;
+  --gray-500: #343a40;
+  --light-blue-100: #f3f5fc;
+  --light-blue-200: #eff1fa;
+  --light-blue-300: #e9ecf8;
+  --light-blue-400: #aab2d5;
+  --light-blue-500: #757fb2;
 }
 
-#input-principal{
-    padding: 2px 8px;
+body {
+  background-color: var(--light-blue-200);
+  padding: 20px;
+  font-family: "Inter";
 }
 
-#btn-copy{
-    display: none;
-    width: 80px;
-    height: 26px;
-    margin: auto 0;
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+.text-center {
+  text-align: center;
 }
 
-#text-result div{
-    width: 40%;
-    margin: auto;
-    padding: 4px 12px;
+.m-top {
+  margin-top: 26px;
+}
+
+/* Main section */
+#input-principal {
+  font-size: 32px;
+  margin-left: 240px;
+  margin-top: 168px;
+  width: 577px;
+  max-height: 400px;
+  color: var(--dark-blue-500);
+  background-color: var(--light-blue-200);
+  border: none;
+  resize: none;
+}
+
+#input-principal:focus {
+  outline: none;
+}
+
+#input-principal::placeholder {
+  color: var(--dark-blue-400);
+}
+
+#btn-sec {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 240px;
+  margin-top: 220px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 328px 328px;
+  gap: 20px;
+}
+
+button {
+  border: none;
+  height: 68px;
+  border-radius: 24px;
+}
+
+#btn-enc{
+    color: #fff;
+    background-color: var(--dark-blue-300);
+}
+
+#btn-des{
+    background-color: var(--gray-100);
+}
+
+#btn-copy {
+  display: none;
+  width: 80px;
+  height: 26px;
+  margin: auto 0;
+}
+
+#text-result div {
+  width: 40%;
+  margin: auto;
+  padding: 4px 12px;
 }
