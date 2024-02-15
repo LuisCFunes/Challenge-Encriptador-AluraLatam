@@ -26,7 +26,7 @@ const lettersDecrypt = {
 };
 
 btnEnc.addEventListener("click", () => {
-  encrypt(input.value, lettersEncrypted);
+  encrypt(input.value.toLowerCase(), lettersEncrypted);
 });
 
 btnDes.addEventListener("click", () => {
@@ -60,8 +60,10 @@ const copyContent = async () => {
 function hideOrshowCopyBtn() {
   if (btnCopy.style.display === "none" && input.value) {
     btnCopy.style.display = "block";
+    result.style.textAlign = "start"
   } else if (input.value.trim() !== "") {
     btnCopy.style.display = "block";
+    result.style.textAlign = "start"
   } else {
     btnCopy.style.display = "none";
   }
