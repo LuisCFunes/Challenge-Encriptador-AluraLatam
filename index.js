@@ -1,5 +1,5 @@
 let result = document.getElementById("result");
-let input = document.getElementById("input-principal");
+let input = document.getElementById("text-convert");
 const btnEnc = document.getElementById("btn-enc");
 const btnDes = document.getElementById("btn-des");
 const btnCopy = document.getElementById("btn-copy");

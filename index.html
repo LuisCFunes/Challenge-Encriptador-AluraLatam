@@ -35,9 +35,8 @@
 
     <main class="flex">
       <div>
-        <section>
-          <textarea
-            id="input-principal"
+        <section id="input-principal">
+          <textarea id="text-convert"
             cols="30"
             rows="5"
             placeholder="Ingrese el texto aqui"
@@ -67,6 +66,7 @@
             </svg>
             <p>Solo letras minusculas y sin acentos</p>
           </div>
+
           <div class="buttons">
             <button id="btn-enc" onclick="hideOrshowCopyBtn()">
               Encriptar
@@ -78,14 +78,10 @@
         </section>
       </div>
 
-      <div>
-        <section id="text-result" class="text-center">
-          <div>
-            <p id="result">Ningun mensaje fue encontrado</p>
-            <button id="btn-copy" onclick="copyContent()">Copiar</button>
-          </div>
-        </section>
-      </div>
+      <section id="text-result" class="text-center">
+        <p id="result">Ningun mensaje fue encontrado</p>
+        <button id="btn-copy" onclick="copyContent()">Copiar</button>
+      </section>
     </main>
 
     <script src="index.js"></script>
