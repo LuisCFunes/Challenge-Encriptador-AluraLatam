@@ -18,7 +18,8 @@
 
 body {
   background-color: var(--light-blue-200);
-  font-family: "Inter";
+  font-family: "Inter", system-ui;
+  font-display: swap;
   min-height: 100vh;
 }
 
@@ -37,6 +38,7 @@ button {
 
 img {
   max-width: 70%;
+  max-height: 250px;
 }
 
 .flex {
@@ -142,9 +144,12 @@ header {
 }
 
 #result {
-  font-size: 18px;
-  text-align: center;
   margin: auto 0px;
+}
+
+#result p {
+  text-align: center;
+  font-size: 18px;
 }
 
 @media (max-width: 1024px) {

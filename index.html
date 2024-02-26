@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <meta name="description" content="Encriptador de palabras">
     <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -79,9 +80,10 @@
       </div>
 
       <section id="text-result" class="text-center">
-        <p id="result">Ningun mensaje fue encontrado
+        <div id="result">
+          <p>Ningun mensaje fue encontrado</p>
           <img src="./img/Muñeco.svg" alt="Persona buscando con una lupa">
-        </p>
+        </div>
         <button id="btn-copy" onclick="copyContent()">Copiar</button>
       </section>
     </main>
