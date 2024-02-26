@@ -51,9 +51,9 @@ const copyContent = async () => {
   let text = document.getElementById("result").innerHTML;
   try {
     await navigator.clipboard.writeText(text);
-    alert("Content copied to clipboard");
+    alert("Texto copiado!");
   } catch (err) {
-    alert("Failed to copy: ", err);
+    alert("Fallo al copiar el texto: ", err);
   }
 };
 
@@ -61,6 +61,7 @@ function hideOrshowCopyBtn() {
   if (btnCopy.style.display === "none" && input.value) {
     btnCopy.style.display = "block";
     result.style.textAlign = "start"
+    result.style.margin = 0;
   } else if (input.value.trim() !== "") {
     btnCopy.style.display = "block";
     result.style.textAlign = "start"

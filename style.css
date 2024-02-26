@@ -35,6 +35,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  max-width: 70%;
+}
+
 .flex {
   display: flex;
   justify-content: space-around;
@@ -119,7 +123,7 @@ header {
   display: none;
   margin: 64px auto;
 
-  &:hover{
+  &:hover {
     border: 2px solid;
     border-color: var(--gray-300);
   }
@@ -131,7 +135,7 @@ header {
   width: 320px;
   height: 80vh;
   margin-left: 12px;
-  padding: 4px 12px;
+  padding: 8px 12px;
   border-radius: 12px;
   display: grid;
   grid-template-rows: 80% 20%;
@@ -140,6 +144,40 @@ header {
 #result {
   font-size: 18px;
   text-align: center;
+  margin: auto 0px;
+}
+
+@media (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+
+  #input-principal {
+    margin: 20px 0px;
+  }
+
+  #input-principal textarea {
+    margin: 20px 10%;
+    width: 80%;
+  }
+
+  #btn-sec {
+    margin: 0px 20px;
+  }
+
+  .buttons,
+  .warning-text {
+    justify-content: center;
+  }
+
+  #text-result {
+    margin: 40px auto;
+    width: 400px;
+  }
+
+  #btn-copy {
+    margin: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -156,11 +194,11 @@ header {
     width: 100%;
   }
 
-  #input-principal textarea{
+  #input-principal textarea {
     margin: 20px 10%;
     width: 80%;
   }
-  
+
   #btn-sec {
     margin: 0px 20px;
   }
@@ -200,7 +238,7 @@ header {
     grid-template-rows: 1fr;
   }
 
-  #btn-copy{
+  #btn-copy {
     width: 70%;
   }
 
@@ -210,7 +248,7 @@ header {
     width: 100%;
   }
 
-  #input-principal textarea{
+  #input-principal textarea {
     margin: 20px 10%;
     width: 80%;
   }
